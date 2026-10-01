@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#0f0069", "on-tertiary-fixed": "#131b2e", "on-primary-fixed-variant": "#004b73", "on-primary-container": "#fdfcff", "inverse-primary": "#93ccff", "on-primary": "#ffffff", "surface-container": "#e5eeff", "surface-dim": "#cbdbf5", "surface-bright": "#f8f9ff", "primary-container": "#007bb9", "on-secondary-container": "#fffbff", "primary-fixed": "#cce5ff", "tertiary": "#545c72", "on-surface": "#0b1c30", "on-secondary-fixed-variant": "#3323cc", "on-error-container": "#93000a", "on-tertiary-container": "#fefcff", "background": "#f8f9ff", "primary": "#006194", "secondary-fixed": "#e2dfff", "tertiary-fixed-dim": "#bec6e0", "error": "#ba1a1a", "secondary-fixed-dim": "#c3c0ff", "tertiary-fixed": "#dae2fd", "primary-fixed-dim": "#93ccff", "inverse-surface": "#213145", "error-container": "#ffdad6", "surface-container-highest": "#d3e4fe", "surface-container-high": "#dce9ff", "on-tertiary": "#ffffff", "on-primary-fixed": "#001d31", "inverse-on-surface": "#eaf1ff", "on-background": "#0b1c30", "on-tertiary-fixed-variant": "#3f465c", "tertiary-container": "#6c748b", "outline-variant": "#bfc7d2", "secondary": "#4b41e1", "on-secondary": "#ffffff", "surface": "#f8f9ff", "on-error": "#ffffff", "surface-tint": "#006398", "surface-container-low": "#eff4ff", "secondary-container": "#645efb", "outline": "#707881", "surface-variant": "#d3e4fe", "surface-container-lowest": "#ffffff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-2xl": "2rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-md": "0.75rem", "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "1.5rem", "gutter": "1rem", "margin-desktop": "2rem", "space-xxs": "0.125rem" }, "fontFamily": { "body-sm": ["Inter"], "body-md": ["Inter"], "title-md": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "metric-currency": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "metric-currency": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script></head><body class="bg-background font-body-md text-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-md"><img alt="CleanWave OS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0Dm4Gn2qYAOXWpEHptFUKJPsgAksldx2tshvzXsM8tL4inplejTIr3drkGJAEbovcil4UoDnKu5v-WrhoRXj-H3HGLWwyR9dieULFRbhtilQqZb-HejLpw98Neob_HN1TaFNSKhCSK4szyF9_1AqGDVhcIg08pFxLl4sBwQWmtfFGZCpVrcjBhoCnKBBcI8-o7Qp4gwHkI8QN5YqLHrfGKD1gOBrv-ScF0_0DcJMET_iyBYMxHTg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">CleanWave OS</span><span class="font-label-sm text-label-sm text-tertiary">Enterprise Multi-Cabang</span></div></div><div class="px-space-md py-space-xs"><div class="bg-surface-container-lowest px-space-md py-space-sm rounded-lg flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">store</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-tertiary">Cabang Terpilih</span><span class="font-label-md text-label-md text-on-surface truncate max-w-[150px]">Kebayoran Baru</span></div></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-xxs overflow-y-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kasir-pos" href="#"><span class="material-symbols-outlined">point_of_sale</span><span class="font-label-lg text-label-lg">Kasir &amp; POS</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="workshop-produksi" href="#"><span class="material-symbols-outlined">local_laundry_service</span><span class="font-label-lg text-label-lg">Workshop &amp; Produksi</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="kurir-delivery" href="#"><span class="material-symbols-outlined">local_shipping</span><span class="font-label-lg text-label-lg">Kurir &amp; Delivery</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="laporan-finansial" href="#"><span class="material-symbols-outlined">account_balance_wallet</span><span class="font-label-lg text-label-lg">Laporan &amp; Finansial</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="inventaris-bahan" href="#"><span class="material-symbols-outlined">inventory_2</span><span class="font-label-lg text-label-lg">Inventaris &amp; Bahan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pelanggan-crm" href="#"><span class="material-symbols-outlined">group</span><span class="font-label-lg text-label-lg">Pelanggan &amp; CRM</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="portal-publik-cek-resi" href="#"><span class="material-symbols-outlined">open_in_new</span><span class="font-label-lg text-label-lg">Portal Cek Resi</span></a></nav></div><div class="p-space-md bg-surface-container-lowest m-space-md rounded-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] space-y-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-tertiary uppercase">Shift Pagi Aktif</span><span class="inline-flex items-center px-space-xs py-space-xxs rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Live</span></div><div class="font-metric-currency text-metric-currency text-on-surface">Rp 2.450.000</div><button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg bg-surface-container-high text-on-surface hover:bg-error-container hover:text-on-error-container transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[16px]">lock_clock</span>Tutup Shift Kasir</button><div class="pt-space-xxs flex items-center justify-between text-tertiary font-label-sm text-label-sm"><span>CleanWave Enterprise</span><span>v2.4</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-space-xl flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-lg flex-1 max-w-2xl"><div class="relative flex-1 max-w-md"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-lg py-space-xs rounded-lg bg-surface-container-low text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-all font-body-sm text-body-sm" placeholder="Cari No. Resi / Pelanggan [Ctrl + K]" type="text"/><kbd class="absolute right-space-md top-1/2 -translate-y-1/2 font-label-sm text-label-sm bg-surface-container-highest px-space-xs py-space-xxs rounded text-on-surface-variant">⌘K</kbd></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-md py-space-xs rounded-lg"><span class="material-symbols-outlined text-[16px] text-primary">sync_alt</span><select class="bg-transparent font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer"><option selected="">Cabang Utama (Kebayoran Baru) - Active</option><option>Cabang BSD Serpong</option><option>Cabang Tebet</option></select></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-md px-space-md py-space-xs bg-surface-container-low rounded-lg font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">print</span><span>Printer Kasir: Online</span></div><span class="text-outline-variant">|</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-primary">scale</span><span>Timbangan: Terkoneksi</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-surface-container-high font-label-sm text-label-sm text-on-surface"><span class="material-symbols-outlined text-[16px] text-secondary">chat</span><span>WA Gateway: Connected</span><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span></div><button class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface">Siti Rahmawati</span><span class="font-label-sm text-label-sm text-tertiary">Store Manager / Super Admin</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGXrEuFve9LdNYm7PN_dzRhGz_ADXqcCqzmpZVEkpIOTI2Dh054OJQHDVrd8PRHJFFS4a9r-ZkNvyRpKZbyoiER-Igw2tFE4GIPozFqqzlLJhGTF327HOZCaHptGRY4hVkoCD7IcRVnOj6RZD7eqqmvHMtjgo32RHeXTArQFGDwhOurMnpy-Vb1s2asYACHHoYlQl26IyCcsuuFQmcPuFdXZQRdYNZx4zYWtUtCKFqC0WV2S0zllw"/></div></div></header><main class="w-full pt-16 px-gutter-desktop py-space-xl bg-background min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Production Header & Live Status Bar -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm bg-primary-fixed/60 text-on-primary-fixed px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[20px] animate-spin text-primary">autorenew</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-fixed-variant">Workshop Sync</span>
+<span class="font-label-md text-label-md font-bold">Live Stream Cabang Utama</span>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-high hidden sm:block"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Beban Kerja Produksi Hari Ini</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-primary">42 Order</span>
+<span class="font-label-md text-label-md text-tertiary">/ 218.4 Kg Total</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Controls & Rack Visualizer Launcher -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-all" onclick="document.getElementById('barcode-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">qr_code_scanner</span>
+<span>Scan Barcode Resi</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md shadow-sm transition-all" onclick="openRackDrawer()" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Denah Rak Penyimpanan (34/50 Terisi)</span>
+</button>
+<button class="p-space-sm bg-surface-container-low hover:bg-surface-container text-tertiary hover:text-on-surface rounded-lg transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Realtime KPI Micro-Cards -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Tahap Cuci (Washer)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">12 Order</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-space-xxs">4 Mesin Aktif</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">waves</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Tahap Pengering (Dryer)</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">8 Order</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mt-space-xxs">Avg. 65°C Steril</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">mode_heat</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Setrika &amp; QC Packing</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">14 Order</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant font-semibold mt-space-xxs">3 Meja Uap Bekerja</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined">iron</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Siap Diambil di Rak</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">8 Order</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold mt-space-xxs">100% WhatsApp Notified</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">shelves</span>
+</div>
+</div>
+</div>
+<!-- Operational Filter Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest px-space-lg py-space-sm rounded-xl shadow-sm">
+<div class="flex flex-wrap items-center gap-space-xs sm:gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary mr-space-xs">Prioritas:</span>
+<button class="px-space-md py-space-xs rounded-full bg-primary text-on-primary font-label-md text-label-md" type="button">Semua (42)</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-space-xxs" type="button">
+<span>⚡ Express / Prioritas</span>
+<span class="px-1.5 py-0.2 bg-error text-on-error rounded-full text-[10px]">7</span>
+</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md" type="button">Reguler (29)</button>
+<button class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-space-xxs" type="button">
+<span>Hari Ini Jatuh Tempo</span>
+<span class="px-1.5 py-0.2 bg-secondary text-on-secondary rounded-full text-[10px]">6</span>
+</button>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">badge</span>
+<select class="bg-surface-container-low font-label-md text-label-md text-on-surface px-space-md py-space-xs rounded-lg focus:outline-none cursor-pointer">
+<option>Semua Operator Workshop</option>
+<option>Joko Santoso (Washer)</option>
+<option>Siti Aminah (Dryer)</option>
+<option>Rina Puspita (Iron/QC)</option>
+<option>Dedi Kurnia (Sorting)</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sort</span>
+<select class="bg-surface-container-low font-label-md text-label-md text-on-surface px-space-md py-space-xs rounded-lg focus:outline-none cursor-pointer">
+<option>Urutkan: Sisa Waktu (Tercepat)</option>
+<option>Urutkan: Bobot Cucian (Terberat)</option>
+<option>Urutkan: Resi Baru Masuk</option>
+</select>
+</div>
+</div>
+</div>
+<!-- 5-Column Workshop Kanban Board -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-space-md items-start overflow-x-auto pb-space-lg">
+<!-- Column 1: Antrean Cuci / Diterima -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm gap-space-sm shadow-sm min-w-[270px]">
+<div class="flex items-center justify-between px-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-title-md text-title-md text-on-surface">Antrean Cuci</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-surface-container text-on-surface-variant font-label-sm text-label-sm rounded-md font-bold">12</span>
+</div>
+<div class="text-tertiary font-label-sm text-label-sm px-space-xs flex items-center justify-between">
+<span>Ready for Washer 1-4</span>
+<span class="material-symbols-outlined text-[16px]">local_laundry_service</span>
+</div>
+<!-- Card 1 (Express Urgensi) -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#CW-8821</span>
+<span class="px-space-xs py-space-xxs bg-error text-on-error rounded font-label-sm text-label-sm flex items-center gap-space-xxs">
+<span class="material-symbols-outlined text-[12px]">bolt</span> Express 6 Jam
+          </span>
+</div>
+<div class="flex flex-col mt-space-xxs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Ahmad Fauzi</span>
+<span class="font-label-md text-label-md text-tertiary">5.2 Kg • Cuci Komplit</span>
+</div>
+<!-- Warning Note -->
+<div class="p-space-xs bg-error-container text-on-error-container rounded font-label-sm text-label-sm flex items-start gap-space-xxs">
+<span class="material-symbols-outlined text-[14px] mt-0.5">report_problem</span>
+<span>Catatan: Noda Kopi pekat kerah kemeja putih</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xxs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-semibold text-error">Sisa 3j 15m</span>
+</div>
+<div class="flex items-center gap-space-xxs bg-surface-container-high px-space-xs py-space-xxs rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">person</span>
+<span>Joko</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span>Mulai Cuci</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- Card 2 (Reguler) -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">#CW-8824</span>
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface font-label-sm text-label-sm rounded">Reguler</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Citra Ananda</span>
+<span class="font-label-md text-label-md text-tertiary">7.8 Kg • Bedcover + Seprai</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xxs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>Besok 15:00</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Belum ditugaskan</span>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span>Assign Operator</span>
+</button>
+</div>
+</div>
+<!-- Column 2: Sedang Dicuci (Washing) -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm gap-space-sm shadow-sm min-w-[270px]">
+<div class="flex items-center justify-between px-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-title-md text-title-md text-on-surface">Sedang Dicuci</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded-md font-bold">4 Aktif</span>
+</div>
+<div class="text-tertiary font-label-sm text-label-sm px-space-xs flex items-center justify-between">
+<span>Washer Load: 85%</span>
+<span class="material-symbols-outlined text-[16px] text-primary">water_drop</span>
+</div>
+<!-- Active Washing Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xxs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#CW-8818</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm font-semibold">Mesin Washer #02</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Hendro Kusuma</span>
+<span class="font-label-md text-label-md text-tertiary">6.4 Kg • Pewangi Lavender</span>
+</div>
+<!-- Live Progress Ring Bar -->
+<div class="flex flex-col gap-space-xxs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-primary font-semibold">Siklus Pembilasan 2</span>
+<span class="text-on-surface font-bold">24 / 45 Mnt</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 53%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xxs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">thermostat</span>
+<span>40°C Warm</span>
+</div>
+<div class="flex items-center gap-space-xxs bg-surface-container-high px-space-xs py-space-xxs rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">person</span>
+<span>Joko Santoso</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">local_laundry_service</span>
+<span>Pindahkan ke Pengering</span>
+</button>
+</div>
+<!-- Active Washing Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">#CW-8820</span>
+<span class="px-space-xs py-space-xxs bg-primary-fixed text-on-primary-fixed rounded font-label-sm text-label-sm font-semibold">Mesin Washer #04</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Maya Indriani</span>
+<span class="font-label-md text-label-md text-tertiary">3.1 Kg • Hijab &amp; Gamis Sutra</span>
+</div>
+<div class="flex flex-col gap-space-xxs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-primary font-semibold">Siklus Delicate Spin</span>
+<span class="text-on-surface font-bold">38 / 40 Mnt</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 95%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-error font-medium">Bilas Lembut</span>
+<div class="flex items-center gap-space-xxs bg-surface-container-high px-space-xs py-space-xxs rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-primary">person</span>
+<span>Dedi K.</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span>Siap Dipindahkan Segera</span>
+</button>
+</div>
+</div>
+<!-- Column 3: Pengeringan (Dryer) -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm gap-space-sm shadow-sm min-w-[270px]">
+<div class="flex items-center justify-between px-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-title-md text-title-md text-on-surface">Pengeringan</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm rounded-md font-bold">8</span>
+</div>
+<div class="text-tertiary font-label-sm text-label-sm px-space-xs flex items-center justify-between">
+<span>Dryer Tumbler 1-3</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">flare</span>
+</div>
+<!-- Dryer Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">#CW-8815</span>
+<span class="px-space-xs py-space-xxs bg-secondary-fixed text-on-secondary-fixed rounded font-label-sm text-label-sm font-semibold">Dryer #01</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Bambang S.</span>
+<span class="font-label-md text-label-md text-tertiary">8.5 Kg • Handuk Hotel</span>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">mode_heat</span>
+<span>Suhu 65°C • Ekstra Fluffy</span>
+</div>
+<div class="flex flex-col gap-space-xxs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Cool Down Cycle</span>
+<span class="text-on-surface font-bold">12 / 30 Mnt</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary">Est. 18 Menit Selesai</span>
+<div class="flex items-center gap-space-xxs bg-surface-container-high px-space-xs py-space-xxs rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-secondary">person</span>
+<span>Siti Aminah</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span>Kirim ke Meja Setrika</span>
+</button>
+</div>
+<!-- Dryer Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">#CW-8812</span>
+<span class="px-space-xs py-space-xxs bg-secondary-fixed text-on-secondary-fixed rounded font-label-sm text-label-sm font-semibold">Dryer #03</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Ratna Dewi</span>
+<span class="font-label-md text-label-md text-tertiary">4.0 Kg • Kemeja Katun</span>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">mode_heat</span>
+<span>Suhu 50°C (Anti Kusut)</span>
+</div>
+<div class="flex flex-col gap-space-xxs pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Selesai Kering</span>
+<span class="text-on-surface font-bold">30 / 30 Mnt</span>
+</div>
+<div class="w-full bg-secondary h-2 rounded-full"></div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-secondary text-on-secondary hover:bg-secondary-container font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Keluarkan dari Mesin</span>
+</button>
+</div>
+</div>
+<!-- Column 4: Setrika & Quality Control -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm gap-space-sm shadow-sm min-w-[270px]">
+<div class="flex items-center justify-between px-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-title-md text-title-md text-on-surface">Setrika &amp; QC</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-surface-container-highest text-on-surface font-label-sm text-label-sm rounded-md font-bold">14</span>
+</div>
+<div class="text-tertiary font-label-sm text-label-sm px-space-xs flex items-center justify-between">
+<span>Meja Uap 1-3 • Packaging</span>
+<span class="material-symbols-outlined text-[16px]">iron</span>
+</div>
+<!-- Ironing & QC Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">#CW-8809</span>
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface rounded font-label-sm text-label-sm font-semibold">Meja Uap #03</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">dr. Nadia Erika</span>
+<span class="font-label-md text-label-md text-tertiary">3.6 Kg • Jas Lab &amp; Kemeja</span>
+</div>
+<!-- Interactive QC Checklist -->
+<div class="p-space-xs bg-surface-container-low rounded flex flex-col gap-space-xxs mt-space-xxs">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Quality Control Checklist:</span>
+<label class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm cursor-pointer">
+<input checked="" class="rounded accent-primary w-3.5 h-3.5" type="checkbox"/>
+<span>Aroma Wangi Segar Sesuai Request</span>
+</label>
+<label class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm cursor-pointer">
+<input checked="" class="rounded accent-primary w-3.5 h-3.5" type="checkbox"/>
+<span>Kancing Utuh &amp; Tidak Mengkerut</span>
+</label>
+<label class="flex items-center gap-space-xs text-on-surface font-label-sm text-label-sm cursor-pointer">
+<input class="rounded accent-primary w-3.5 h-3.5" type="checkbox"/>
+<span>Plastik Packaging Seal Rapi</span>
+</label>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary">Gantungan Hanger</span>
+<div class="flex items-center gap-space-xxs bg-surface-container-high px-space-xs py-space-xxs rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-tertiary">person</span>
+<span>Rina P.</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" onclick="openRackAllocationModal('CW-8809', 'dr. Nadia Erika')" type="button">
+<span class="material-symbols-outlined text-[16px]">shelves</span>
+<span>Alokasikan Nomor Rak</span>
+</button>
+</div>
+<!-- Ironing Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">#CW-8811</span>
+<span class="px-space-xs py-space-xxs bg-surface-container-high text-on-surface rounded font-label-sm text-label-sm">Meja Uap #01</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">Gunawan Wibisono</span>
+<span class="font-label-md text-label-md text-tertiary">5.0 Kg • Pakaian Kantor</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary">Sedang Lipat Rapi</span>
+<div class="flex items-center gap-space-xxs bg-surface-container-high px-space-xs py-space-xxs rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px] text-tertiary">person</span>
+<span>Rina P.</span>
+</div>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span>QC &amp; Packing Selesai</span>
+</button>
+</div>
+</div>
+<!-- Column 5: Selesai & Rak Penyimpanan -->
+<div class="flex flex-col bg-surface-container-low rounded-xl p-space-sm gap-space-sm shadow-sm min-w-[270px]">
+<div class="flex items-center justify-between px-space-xs py-space-xxs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-title-md text-title-md text-on-surface">Siap di Rak</span>
+</div>
+<span class="px-space-xs py-space-xxs bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm rounded-md font-bold">8 Siap</span>
+</div>
+<div class="text-tertiary font-label-sm text-label-sm px-space-xs flex items-center justify-between">
+<span>Menunggu Pick Up Pelanggan</span>
+<span class="material-symbols-outlined text-[16px] text-primary">done_all</span>
+</div>
+<!-- Ready on Shelf Card 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">#CW-8798</span>
+<span class="px-space-sm py-space-xxs bg-primary text-on-primary rounded font-label-md text-label-md font-bold tracking-wider">
+            RAK A-12
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Melati Kusuma</span>
+<span class="font-label-md text-label-md text-tertiary">4.2 Kg • Total Rp 52.000</span>
+</div>
+<!-- WhatsApp Status Pill -->
+<div class="flex items-center gap-space-xs p-space-xs bg-surface-container-low rounded text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">mark_chat_read</span>
+<span class="text-on-surface font-medium">WhatsApp Sent: 10:45 WIB</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="px-space-xs py-0.5 bg-primary-fixed text-on-primary-fixed rounded text-[11px] font-semibold">Lunas POS</span>
+<span class="font-label-sm text-label-sm text-tertiary">Masuk: 3 Jam lalu</span>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">check_box</span>
+<span>Serahkan ke Pelanggan</span>
+</button>
+</div>
+<!-- Ready on Shelf Card 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm flex flex-col gap-space-xs hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">#CW-8792</span>
+<span class="px-space-sm py-space-xxs bg-secondary text-on-secondary rounded font-label-md text-label-md font-bold tracking-wider">
+            HANGER H-03
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Taufik Hidayat</span>
+<span class="font-label-md text-label-md text-tertiary">2 Pcs • Jas Formal Sutra</span>
+</div>
+<div class="flex items-center gap-space-xs p-space-xs bg-error-container text-on-error-container rounded font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">pending_actions</span>
+<span class="font-bold">Belum Lunas: Rp 85.000</span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xxs text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">chat</span>
+<span>WA Notif Aktif</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">Rak Sejak: Kemarin</span>
+</div>
+<button class="w-full mt-space-xs py-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md rounded flex items-center justify-center gap-space-xxs transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">point_of_sale</span>
+<span>Kasir &amp; Pengambilan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over / Modal: Rak Penyimpanan Visual Grid -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex justify-end transition-opacity" id="rack-drawer">
+<div class="w-full max-w-2xl bg-surface-container-lowest h-full shadow-2xl flex flex-col justify-between overflow-y-auto">
+<div class="flex flex-col">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">shelves</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Denah Rak Penyimpanan Cucian</span>
+<span class="font-label-sm text-label-sm text-tertiary">Cabang Utama Kebayoran Baru (Kapasitas: 50 Slot)</span>
+</div>
+</div>
+<button class="p-space-xs rounded-lg hover:bg-surface-container-high text-tertiary hover:text-on-surface" onclick="closeRackDrawer()" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Legend and Quick Stats -->
+<div class="p-space-lg flex flex-wrap items-center justify-between gap-space-md bg-surface-container-lowest">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xxs">
+<span class="w-3.5 h-3.5 rounded bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Terisi Normal (28)</span>
+</div>
+<div class="flex items-center gap-space-xxs">
+<span class="w-3.5 h-3.5 rounded bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Belum Lunas (6)</span>
+</div>
+<div class="flex items-center gap-space-xxs">
+<span class="w-3.5 h-3.5 rounded bg-surface-container-high"></span>
+<span class="font-label-sm text-label-sm text-tertiary">Kosong (16)</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">Tingkat Okupansi: 68%</span>
+</div>
+<!-- Visual Shelves Container -->
+<div class="p-space-lg flex flex-col gap-space-xl">
+<!-- Blok Rak A (Pakaian Lipat Reguler / Express) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Blok Rak A (Lipat &amp; Reguler)</span>
+<span class="font-label-sm text-label-sm text-tertiary">20 Kompartemen</span>
+</div>
+<div class="grid grid-cols-5 gap-space-sm">
+<!-- Rak A1 to A10 sample items -->
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-01</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8770</span>
+<span class="text-[10px] opacity-80 truncate">Budi H.</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-02</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8774</span>
+<span class="text-[10px] opacity-80 truncate">Ratna D.</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">A-03</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">+ Isi Rak</span>
+</div>
+<div class="p-space-sm bg-error text-on-error rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-04</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8781</span>
+<span class="text-[10px] opacity-90 truncate">UNPAID Rp45k</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-05</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8789</span>
+<span class="text-[10px] opacity-80 truncate">Doni P.</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">A-06</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">+ Isi Rak</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-07</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8790</span>
+<span class="text-[10px] opacity-80 truncate">Farhan</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">A-08</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">+ Isi Rak</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-09</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8794</span>
+<span class="text-[10px] opacity-80 truncate">Kiki M.</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-10</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8795</span>
+<span class="text-[10px] opacity-80 truncate">Tia</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">A-11</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">+ Isi Rak</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm ring-2 ring-primary ring-offset-2">
+<span class="font-label-sm text-label-sm font-bold">A-12 ★</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8798</span>
+<span class="text-[10px] opacity-80 truncate">Melati K.</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">A-13</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">+ Isi Rak</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">A-14</span>
+<span class="font-label-sm text-label-sm text-primary font-medium mt-1">+ Isi Rak</span>
+</div>
+<div class="p-space-sm bg-primary text-on-primary rounded-lg flex flex-col justify-between h-20 shadow-sm cursor-pointer hover:opacity-90">
+<span class="font-label-sm text-label-sm font-bold">A-15</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8801</span>
+<span class="text-[10px] opacity-80 truncate">Yusuf</span>
+</div>
+</div>
+</div>
+<!-- Blok Gantungan Hanger & Jas / Gaun (Blok H) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold">Blok Rel Gantungan / Hanger (H-01 s/d H-15)</span>
+<span class="font-label-sm text-label-sm text-tertiary">Jas, Gaun &amp; Gamis Gantung</span>
+</div>
+<div class="grid grid-cols-5 gap-space-sm">
+<div class="p-space-sm bg-secondary text-on-secondary rounded-lg flex flex-col justify-between h-20 shadow-sm">
+<span class="font-label-sm text-label-sm font-bold">H-01</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8755</span>
+<span class="text-[10px] opacity-80">Jas Pria (2 Pcs)</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">H-02</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-1">+ Slot Kosong</span>
+</div>
+<div class="p-space-sm bg-error text-on-error rounded-lg flex flex-col justify-between h-20 shadow-sm">
+<span class="font-label-sm text-label-sm font-bold">H-03</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8792</span>
+<span class="text-[10px] opacity-90 truncate">Taufik H. (Unpaid)</span>
+</div>
+<div class="p-space-sm bg-secondary text-on-secondary rounded-lg flex flex-col justify-between h-20 shadow-sm">
+<span class="font-label-sm text-label-sm font-bold">H-04</span>
+<span class="font-label-sm text-label-sm truncate">#CW-8796</span>
+<span class="text-[10px] opacity-80 truncate">Gaun Pengantin</span>
+</div>
+<div class="p-space-sm bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest rounded-lg flex flex-col items-center justify-center h-20 cursor-pointer transition-colors">
+<span class="font-label-md text-label-md font-bold text-tertiary">H-05</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium mt-1">+ Slot Kosong</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary">Sistem Rak Otomatis CleanWave Terintegrasi SMS / WhatsApp</span>
+<button class="px-space-lg py-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors" onclick="closeRackDrawer()" type="button">
+          Tutup Tampilan Denah
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Quick Barcode Scanner Modal -->
+<div class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="barcode-modal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-xl flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">qr_code_scanner</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Scan Barcode / Resi</span>
+</div>
+<button class="p-space-xxs rounded hover:bg-surface-container text-tertiary" onclick="document.getElementById('barcode-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-tertiary">Arahkan scanner handheld atau masukkan nomor resi:</span>
+<div class="relative">
+<input class="w-full px-space-md py-space-sm bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:bg-surface-container-lowest" id="manual-resi-input" placeholder="Misal: CW-8821..." type="text"/>
+<span class="material-symbols-outlined absolute right-space-md top-1/2 -translate-y-1/2 text-primary animate-pulse">barcode</span>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">sensors</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Continuous hardware scan listener is active. Siap memindai tag pakaian.</span>
+</div>
+<div class="flex items-center justify-end gap-space-xs pt-space-xs">
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md" onclick="document.getElementById('barcode-modal').classList.add('hidden')" type="button">
+          Batal
+        </button>
+<button class="px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md" onclick="simulateScanAction()" type="button">
+          Temukan &amp; Buka Order
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function openRackDrawer() {
+    const drawer = document.getElementById('rack-drawer');
+    if (drawer) {
+      drawer.classList.remove('hidden');
+    }
+  }
+
+  function closeRackDrawer() {
+    const drawer = document.getElementById('rack-drawer');
+    if (drawer) {
+      drawer.classList.add('hidden');
+    }
+  }
+
+  function openRackAllocationModal(resi, nama) {
+    openRackDrawer();
+  }
+
+  function simulateScanAction() {
+    const input = document.getElementById('manual-resi-input');
+    const val = input ? input.value : 'CW-8821';
+    alert('Resi ' + (val || 'CW-8821') + ' teridentifikasi! Memindahkan fokus ke Kanban card.');
+    document.getElementById('barcode-modal').classList.add('hidden');
+  }
+</script></main></div></body></html>

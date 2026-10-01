@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "midnight": "#010736", "navy-slate": "#0D1C42", "navy-card": "#132554", "navy-light": "#1a316c", "royal-blue": "#22396F", "royal-border": "#22396F", "champagne": "#FCF1D0", "champagne-light": "#FFF9E6", "champagne-dark": "#362E12", "text-main": "#FFFFFF", "text-sub": "#C9D4F2", "text-muted": "#8EA0CD", "surface-container": "#0D1C42", "surface-container-high": "#132554", "surface-container-highest": "#22396F", "surface-container-low": "#091433", "surface-container-lowest": "#050D27", "background": "#010736", "primary": "#FCF1D0", "on-primary": "#201B07", "secondary": "#22396F", "on-secondary": "#FFFFFF", "on-surface": "#FFFFFF", "on-surface-variant": "#C9D4F2", "outline": "#22396F", "outline-variant": "#1c2e5a" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "margin": "1rem", "space-2xl": "2rem", "space-sm": "0.5rem", "space-lg": "1rem", "space-md": "0.75rem", "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "gutter-tablet": "1.25rem", "space-xl": "1.5rem", "gutter": "1rem", "margin-desktop": "2rem", "space-xxs": "0.125rem" }, "fontFamily": { "body-sm": ["Inter"], "body-md": ["Inter"], "title-md": ["Inter"], "label-sm": ["Inter"], "label-lg": ["Inter"], "metric-currency": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, "fontSize": { "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "metric-currency": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }] } } } };</script></head><body class="bg-midnight font-body-md text-body-md text-text-sub antialiased selection:bg-champagne selection:text-midnight"><aside class="fixed left-0 top-0 h-full w-72 bg-[#08122d] border-r border-royal-border z-50 flex flex-col justify-between shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="flex flex-col flex-1 min-h-0"><div class="h-16 px-space-lg flex items-center gap-space-md border-b border-royal-border/50"><img alt="CleanWave OS Logo" class="h-8 w-auto object-contain brightness-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0Dm4Gn2qYAOXWpEHptFUKJPsgAksldx2tshvzXsM8tL4inplejTIr3drkGJAEbovcil4UoDnKu5v-WrhoRXj-H3HGLWwyR9dieULFRbhtilQqZb-HejLpw98Neob_HN1TaFNSKhCSK4szyF9_1AqGDVhcIg08pFxLl4sBwQWmtfFGZCpVrcjBhoCnKBBcI8-o7Qp4gwHkI8QN5YqLHrfGKD1gOBrv-ScF0_0DcJMET_iyBYMxHTg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-champagne tracking-tight font-bold">CleanWave OS</span><span class="font-label-sm text-label-sm text-text-muted">Enterprise Multi-Cabang</span></div></div><div class="px-space-md py-space-xs"><div class="bg-navy-slate border border-royal-border px-space-md py-space-sm rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-champagne text-[18px]">store</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-text-muted">Cabang Terpilih</span><span class="font-label-md text-label-md text-text-main truncate max-w-[150px]">Kebayoran Baru</span></div></div><span class="material-symbols-outlined text-text-muted text-[18px]">expand_more</span></div></div><nav class="flex-1 px-space-md py-space-sm space-y-space-xxs overflow-y-auto" data-active-classes="bg-champagne text-midnight font-bold rounded-lg"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-text-sub hover:bg-navy-slate hover:text-text-main transition-colors" data-path="kasir-pos" href="#"><span class="material-symbols-outlined text-[20px]">point_of_sale</span><span class="font-label-lg text-label-lg">Kasir &amp; POS</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-text-sub hover:bg-navy-slate hover:text-text-main transition-colors" data-path="workshop-produksi" href="#"><span class="material-symbols-outlined text-[20px]">local_laundry_service</span><span class="font-label-lg text-label-lg">Workshop &amp; Produksi</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-text-sub hover:bg-navy-slate hover:text-text-main transition-colors" data-path="kurir-delivery" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="font-label-lg text-label-lg">Kurir &amp; Delivery</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-text-sub hover:bg-navy-slate hover:text-text-main transition-colors" data-path="laporan-finansial" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="font-label-lg text-label-lg">Laporan &amp; Finansial</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-text-sub hover:bg-navy-slate hover:text-text-main transition-colors" data-path="inventaris-bahan" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg">Inventaris &amp; Bahan</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-text-sub hover:bg-navy-slate hover:text-text-main transition-colors" data-path="pelanggan-crm" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-lg text-label-lg">Pelanggan &amp; CRM</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm transition-colors bg-champagne text-champagne-dark font-bold rounded-lg shadow-sm" data-path="portal-publik-cek-resi" href="#"><span class="material-symbols-outlined text-[20px] text-champagne-dark">open_in_new</span><span class="font-label-lg text-label-lg">Portal Cek Resi</span></a></nav></div><div class="p-space-md bg-navy-slate border border-royal-border m-space-md rounded-xl space-y-space-sm"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider font-semibold">Shift Pagi Aktif</span><span class="inline-flex items-center px-space-xs py-space-xxs rounded bg-champagne text-midnight font-bold font-label-sm text-label-sm">Live</span></div><div class="font-metric-currency text-metric-currency text-text-main font-bold">Rp 2.450.000</div><button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md rounded-lg bg-navy-card hover:bg-royal-blue text-text-main border border-royal-border transition-colors font-label-md text-label-md" type="button"><span class="material-symbols-outlined text-[16px] text-champagne">lock_clock</span>Tutup Shift Kasir</button><div class="pt-space-xxs flex items-center justify-between text-text-muted font-label-sm text-label-sm"><span>CleanWave Enterprise</span><span class="text-champagne font-semibold">v2.4</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-[#08122d]/90 backdrop-blur-xl border-b border-royal-border z-40 px-space-xl flex items-center justify-between shadow-[0_4px_20px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-space-lg flex-1 max-w-2xl"><div class="relative flex-1 max-w-md"><span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-text-muted text-[20px]">search</span><input class="w-full pl-10 pr-space-xl py-space-xs rounded-lg bg-navy-slate border border-royal-border text-text-main placeholder:text-text-muted focus:outline-none focus:border-champagne transition-all font-body-sm text-body-sm" placeholder="Cari No. Resi / Pelanggan [Ctrl + K]" type="text"/><kbd class="absolute right-space-md top-1/2 -translate-y-1/2 font-label-sm text-label-sm bg-navy-card border border-royal-border px-space-xs py-space-xxs rounded text-text-sub">⌘K</kbd></div><div class="flex items-center gap-space-xs bg-navy-slate border border-royal-border px-space-md py-space-xs rounded-lg"><span class="material-symbols-outlined text-[16px] text-champagne">sync_alt</span><select class="bg-transparent font-label-md text-label-md text-text-main focus:outline-none cursor-pointer"><option class="bg-navy-slate text-text-main" selected="">Cabang Utama (Kebayoran Baru) - Active</option><option class="bg-navy-slate text-text-main">Cabang BSD Serpong</option><option class="bg-navy-slate text-text-main">Cabang Tebet</option></select></div></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-space-md px-space-md py-space-xs bg-navy-slate border border-royal-border rounded-lg font-label-sm text-label-sm text-text-sub"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-champagne">print</span><span>Printer Kasir: Online</span></div><span class="text-royal-border">|</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-champagne">scale</span><span>Timbangan: Terkoneksi</span></div></div><div class="flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-navy-slate border border-royal-border font-label-sm text-label-sm text-text-sub"><span class="material-symbols-outlined text-[16px] text-champagne">chat</span><span>WA Gateway: Connected</span><span class="w-2 h-2 rounded-full bg-champagne animate-pulse"></span></div><button class="p-space-xs text-text-sub hover:text-text-main transition-colors relative" type="button"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1 right-1 w-2 h-2 bg-champagne rounded-full"></span></button><div class="flex items-center gap-space-md pl-space-sm"><div class="flex flex-col text-right"><span class="font-label-md text-label-md text-text-main font-semibold">Siti Rahmawati</span><span class="font-label-sm text-label-sm text-champagne">Store Manager / Super Admin</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-champagne/60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGXrEuFve9LdNYm7PN_dzRhGz_ADXqcCqzmpZVEkpIOTI2Dh054OJQHDVrd8PRHJFFS4a9r-ZkNvyRpKZbyoiER-Igw2tFE4GIPozFqqzlLJhGTF327HOZCaHptGRY4hVkoCD7IcRVnOj6RZD7eqqmvHMtjgo32RHeXTArQFGDwhOurMnpy-Vb1s2asYACHHoYlQl26IyCcsuuFQmcPuFdXZQRdYNZx4zYWtUtCKFqC0WV2S0zllw"/></div></div></header><main class="w-full pt-16 px-gutter-desktop py-space-xl bg-midnight min-h-screen text-text-sub"><div class="flex flex-col w-full space-y-space-xl">
+<!-- Public Portal Hero & Notification Banner -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0A1637] via-navy-slate to-[#162B5C] border border-royal-border p-space-xl md:p-space-2xl text-text-main shadow-2xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-champagne/10 blur-3xl pointer-events-none"></div>
+<div class="absolute left-1/3 -bottom-24 w-96 h-96 rounded-full bg-royal-blue/30 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-space-xl">
+<div class="max-w-2xl space-y-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xxs rounded-full bg-navy-card border border-champagne/30 font-label-sm text-label-sm text-champagne tracking-wider font-semibold">
+<span class="inline-block w-2 h-2 rounded-full bg-champagne animate-ping"></span>
+          PORTAL SELF-SERVICE PELANGGAN REAL-TIME
+        </div>
+<div class="flex items-center gap-space-md">
+<img alt="CleanWave Laundry Logo" class="h-12 w-12 rounded-xl object-contain bg-navy-card/80 border border-royal-border p-1 shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0Dm4Gn2qYAOXWpEHptFUKJPsgAksldx2tshvzXsM8tL4inplejTIr3drkGJAEbovcil4UoDnKu5v-WrhoRXj-H3HGLWwyR9dieULFRbhtilQqZb-HejLpw98Neob_HN1TaFNSKhCSK4szyF9_1AqGDVhcIg08pFxLl4sBwQWmtfFGZCpVrcjBhoCnKBBcI8-o7Qp4gwHkI8QN5YqLHrfGKD1gOBrv-ScF0_0DcJMET_iyBYMxHTg"/>
+<h1 class="font-headline-xl text-headline-xl font-bold tracking-tight text-text-main">CleanWave Laundry</h1>
+</div>
+<p class="font-headline-sm text-headline-sm text-text-sub font-normal leading-relaxed">
+          Pantau cucianmu secara real-time kapan saja &amp; di mana saja, tanpa perlu menunggu balasan admin.
+        </p>
+</div>
+<!-- Quick Switcher Tabs in Hero -->
+<div class="bg-navy-card/90 border border-royal-border p-space-xs rounded-xl flex md:flex-col gap-space-xs self-start md:self-center shadow-lg">
+<button class="flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg transition-all duration-200 bg-champagne text-midnight font-bold shadow-md" id="tab-cek-resi-btn" onclick="switchPortalTab('cek-resi')">
+<span class="material-symbols-outlined text-[20px] text-midnight">manage_search</span>
+<span>Cek Status Resi</span>
+</button>
+<button class="flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg transition-all duration-200 text-text-sub hover:text-champagne hover:bg-navy-slate" id="tab-antar-jemput-btn" onclick="switchPortalTab('antar-jemput')">
+<span class="material-symbols-outlined text-[20px]">electric_moped</span>
+<span>Pesan Antar-Jemput</span>
+</button>
+</div>
+</div>
+</section>
+<!-- TAB VIEW 1: Cek Status Resi & Nota -->
+<div class="flex flex-col space-y-space-xl" id="view-cek-resi">
+<!-- Live Tracking Search Bar Card -->
+<section class="bg-navy-slate border border-royal-border p-space-lg md:p-space-xl rounded-2xl shadow-xl space-y-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-main font-bold">Pencarian Status Cucian</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Masukkan nomor nota cetak kasir atau 10-13 digit nomor WhatsApp yang didaftarkan.</p>
+</div>
+<div class="flex items-center gap-space-xs text-champagne font-label-sm text-label-sm bg-navy-card border border-royal-border px-space-md py-space-xs rounded-full self-start">
+<span class="material-symbols-outlined text-[16px] text-champagne">verified</span>
+          Terhubung Langsung ke Mesin IoT Workshop
+        </div>
+</div>
+<form class="flex flex-col sm:flex-row gap-space-sm" onsubmit="event.preventDefault(); simulateSearch();">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-text-muted text-[22px]">receipt_long</span>
+<input class="w-full pl-11 pr-space-xl py-space-md bg-navy-card border border-royal-border text-text-main rounded-xl font-label-lg text-label-lg placeholder:text-text-muted focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne shadow-inner transition-all" id="resi-search-input" placeholder="Contoh: CW-202505-0891 atau 08129876xxxx" type="text" value="CW-202505-0891"/>
+<button class="absolute right-space-md top-1/2 -translate-y-1/2 text-text-muted hover:text-champagne" onclick="document.getElementById('resi-search-input').value=''" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<button class="flex items-center justify-center gap-space-xs px-space-xl py-space-md bg-champagne hover:bg-champagne-light text-midnight rounded-xl font-label-lg text-label-lg font-bold shadow-lg hover:shadow-champagne/20 transition-all active:scale-[0.98]" type="submit">
+<span class="material-symbols-outlined text-[20px] text-midnight">search</span>
+<span>Lacak Cucian Sekarang</span>
+</button>
+</form>
+<!-- Quick sample tokens for testing -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xxs">
+<span class="font-label-sm text-label-sm text-text-muted">Contoh Cepat:</span>
+<button class="px-space-sm py-space-xxs bg-navy-card border border-royal-border rounded-full font-label-sm text-label-sm text-text-sub hover:bg-champagne hover:text-midnight hover:border-champagne transition-all" onclick="selectSample('CW-202505-0891')" type="button">CW-202505-0891 (Siap Ambil)</button>
+<button class="px-space-sm py-space-xxs bg-navy-card border border-royal-border rounded-full font-label-sm text-label-sm text-text-sub hover:bg-champagne hover:text-midnight hover:border-champagne transition-all" onclick="selectSample('CW-202505-0902')" type="button">CW-202505-0902 (Proses Cuci)</button>
+<button class="px-space-sm py-space-xxs bg-navy-card border border-royal-border rounded-full font-label-sm text-label-sm text-text-sub hover:bg-champagne hover:text-midnight hover:border-champagne transition-all" onclick="selectSample('081298451120')" type="button">Via No. WA Pelanggan</button>
+</div>
+</section>
+<!-- Real-Time Tracking Result Card (CW-202505-0891) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl" id="tracking-card">
+<!-- Left 7 Cols: Status Header, Stepper, & IoT Activity -->
+<div class="lg:col-span-8 space-y-space-lg">
+<!-- Main Highlight Banner -->
+<div class="bg-navy-slate border border-royal-border p-space-xl rounded-2xl shadow-xl space-y-space-lg relative overflow-hidden">
+<div class="absolute right-0 top-0 translate-x-8 -translate-y-8 w-56 h-56 bg-champagne/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-text-muted mb-space-xxs">
+<span>No. Resi:</span>
+<span class="font-bold text-champagne">CW-202505-0891</span>
+<span class="text-royal-border">•</span>
+<span>Masuk: Hari ini, 08:30 WIB</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl text-text-main font-bold">Halo, Kak Budi Pratama! 👋</h3>
+<p class="font-body-md text-body-md text-text-sub">Cucian pakaian harian &amp; kemeja Anda telah rampung dikerjakan dengan standar higienis CleanWave.</p>
+</div>
+<!-- Current Stage Badge -->
+<div class="inline-flex items-center gap-space-xs bg-champagne px-space-md py-space-sm rounded-xl text-midnight font-label-lg text-label-lg shadow-md border border-champagne-light">
+<span class="w-3 h-3 rounded-full bg-[#1b5e20] animate-pulse"></span>
+<span class="font-bold tracking-tight text-midnight">SIAP DIAMBIL DI OUTLET 📦</span>
+</div>
+</div>
+<!-- Outlet & Storage Rack Callout -->
+<div class="bg-navy-card border border-royal-border p-space-md rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-champagne text-midnight flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[26px] text-midnight">shelves</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-text-muted">Lokasi Penyimpanan Bersih</span>
+<div class="font-headline-sm text-headline-sm text-champagne font-bold">Rak Penyimpanan A-12</div>
+<span class="font-body-sm text-body-sm text-text-sub">CleanWave Cabang Kebayoran Baru (Lantai 1)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<a class="px-space-md py-space-sm bg-royal-blue hover:bg-navy-light border border-royal-border rounded-lg text-champagne font-label-md text-label-md flex items-center gap-space-xs transition-colors shadow-sm" href="https://maps.google.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-champagne">near_me</span>
+<span>Rute Maps Outlet</span>
+</a>
+</div>
+</div>
+<!-- Progress Stepper (Detailed 6-Step) -->
+<div class="pt-space-sm space-y-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-text-main">Tahapan Pengerjaan Laundry</span>
+<span class="font-label-sm text-label-sm text-champagne font-bold">100% Selesai Sesuai SOP</span>
+</div>
+<!-- Stepper Container -->
+<div class="relative pl-6 space-y-space-lg before:content-[''] before:absolute before:left-3 before:top-2 before:bottom-2 before:w-0.5 before:bg-royal-border">
+<!-- Step 1 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-royal-blue border border-royal-border text-champagne flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1 bg-navy-card border border-royal-border p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-text-main">1. Order Diterima &amp; Ditimbang</span>
+<span class="font-label-sm text-label-sm text-text-muted">08:30 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-sub">Ditimbang di timbangan digital kalibrasi: 5.2 kg. Dipisah serat halus &amp; kemeja formal.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-royal-blue border border-royal-border text-champagne flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1 bg-navy-card border border-royal-border p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-text-main">2. Proses Pencucian Higienis (IoT)</span>
+<span class="font-label-sm text-label-sm text-text-muted">09:15 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-sub">Dicuci pada Mesin Komersil #02 (Cycle: Regular Warm 40°C, Anti-bacterial rinse).</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-royal-blue border border-royal-border text-champagne flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1 bg-navy-card border border-royal-border p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-text-main">3. Pengeringan Putar &amp; Uap Panas</span>
+<span class="font-label-sm text-label-sm text-text-muted">10:45 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-sub">Pengering Dryer #01 suhu optimal 65°C tanpa merusak elastisitas serat pakaian.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-royal-blue border border-royal-border text-champagne flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1 bg-navy-card border border-royal-border p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-text-main">4. Quality Control &amp; Setrika Uap Boiler</span>
+<span class="font-label-sm text-label-sm text-text-muted">12:30 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-sub">Penyetrikaan uap presisi tinggi + parfum grade premium aroma Ocean Fresh.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-royal-blue border border-royal-border text-champagne flex items-center justify-center text-[12px] shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+<div class="flex-1 bg-navy-card border border-royal-border p-space-sm rounded-xl">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-text-main">5. Packing Kedap Udara &amp; Masuk Rak A-12</span>
+<span class="font-label-sm text-label-sm text-text-muted">13:10 WIB</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-sub">Disegel plastik tebal anti-debu &amp; kemeja digantung rapi dengan cover hanger khusus.</p>
+</div>
+</div>
+<!-- Step 6 (Active / Ready Stage) -->
+<div class="relative flex items-start gap-space-md">
+<div class="absolute -left-6 top-0 w-6 h-6 rounded-full bg-champagne text-midnight flex items-center justify-center text-[12px] shadow-lg animate-bounce font-bold">
+<span class="material-symbols-outlined text-[14px] text-midnight">inventory_2</span>
+</div>
+<div class="flex-1 bg-navy-card border-2 border-champagne/70 p-space-sm rounded-xl shadow-md">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-champagne">6. Siap Diambil / Menunggu Jadwal Pickup</span>
+<span class="font-label-sm text-label-sm px-space-xs py-space-xxs rounded bg-champagne text-midnight font-bold">READY</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-main">Silakan tunjukkan QR Resi ini ke kasir outlet saat pengambilan.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Visual Proof / QC Snapshot -->
+<div class="bg-navy-slate border border-royal-border p-space-lg rounded-2xl shadow-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-champagne text-[20px]">photo_camera</span>
+<span class="font-label-lg text-label-lg font-bold text-text-main">Foto Verifikasi Pengepakan Bersih</span>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted">Diambil otomatis oleh Station QC</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="relative rounded-xl overflow-hidden border border-royal-border shadow-sm group">
+<img class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Tightly packed folded clean laundry neatly sealed in clear protective packaging with professional CleanWave brand label in a bright clean modern laundry facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD28briJ3cDYTiqYsRsOvhKOF3BEDaRlP7Ldg7ExUV9ZqQH47hH6ENHJisSmw7tUvh_FDJcWihMBLVhuH-zX-EEBbgIYt5_itVYkc_Z3dcn5Tlz69CmEEkZLe5WGWaUXIbnzSTq7OFitPlEU19OiMyrwtndPCGGmJWmIRONFpJqfsZP2TY83WxpruWGRkTRhTafy08LvX2l2Ecyz_9euNlBh3o_kgWu8kkQNZ0LrhinRVPXXBI6Pw0"/>
+<div class="absolute bottom-0 inset-x-0 p-space-xs bg-gradient-to-t from-midnight/90 to-transparent text-text-main font-label-sm text-label-sm">
+                Paket Kiloan Wangi (5.2 Kg Sealed)
+              </div>
+</div>
+<div class="relative rounded-xl overflow-hidden border border-royal-border shadow-sm group">
+<img class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Crisply pressed business dress shirt hanging inside a transparent dustproof garment bag with clean wooden hanger in a bright pristine laundry workshop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWifuxB9tMXjNx5fbWUw_GJrZzc-Xy9-_f6M5_VxO4BIGQJR4MZ__3M39DXrwZqrdpCBclzLgDwqjzhmLnWipyUxgkVlsHUoFpu5bFg8qNA-1UYqpXBN-1BuWq50LpuYuuwxHBETGKxtll9lnqqQstnhZVUx7ZMGUhjjKB0o_LjYUwq7Sn0PQxUKtY6Ys1bQC9FoE8xL9qYeRi3AAjIuJa9KlyzCvddjUhVMWhClWGJPH7wcvpKAQ"/>
+<div class="absolute bottom-0 inset-x-0 p-space-xs bg-gradient-to-t from-midnight/90 to-transparent text-text-main font-label-sm text-label-sm">
+                1x Kemeja Formal Gantung (Hanger CleanWave)
+              </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right 4-5 Cols: Digital Receipt, QR Barcode, Payment & Support Actions -->
+<div class="lg:col-span-4 space-y-space-lg">
+<!-- Digital e-Nota Card -->
+<div class="bg-navy-slate border border-royal-border p-space-lg rounded-2xl shadow-xl space-y-space-md relative">
+<!-- Top Perforation Visual Detail -->
+<div class="flex items-center justify-between pb-space-sm border-b border-royal-border">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-champagne text-[22px]">receipt</span>
+<span class="font-headline-sm text-headline-sm font-bold text-text-main">Nota Digital</span>
+</div>
+<span class="px-space-xs py-space-xxs rounded bg-champagne text-midnight font-label-sm text-label-sm font-bold">
+              CW-202505-0891
+            </span>
+</div>
+<!-- QR Verification for Easy Pickup at Counter -->
+<div class="bg-navy-card border border-royal-border p-space-md rounded-xl flex flex-col items-center justify-center text-center space-y-space-xs">
+<!-- QR Code Container: Clear Light background for high scan contrast -->
+<div class="p-space-sm bg-champagne-light rounded-xl shadow-md border border-champagne">
+<svg class="text-midnight" fill="currentColor" height="130" viewbox="0 0 100 100" width="130">
+<!-- Outer borders & patterns of standard QR -->
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="5" width="28" x="5" y="5"></rect>
+<rect fill="currentColor" height="14" rx="1" width="14" x="12" y="12"></rect>
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="5" width="28" x="67" y="5"></rect>
+<rect fill="currentColor" height="14" rx="1" width="14" x="74" y="12"></rect>
+<rect fill="none" height="28" rx="2" stroke="currentColor" stroke-width="5" width="28" x="5" y="67"></rect>
+<rect fill="currentColor" height="14" rx="1" width="14" x="12" y="74"></rect>
+<!-- Random inner data matrix elements -->
+<rect fill="currentColor" height="7" width="7" x="42" y="10"></rect>
+<rect fill="currentColor" height="7" width="7" x="52" y="18"></rect>
+<rect fill="currentColor" height="7" width="7" x="42" y="26"></rect>
+<rect fill="currentColor" height="7" width="7" x="10" y="44"></rect>
+<rect fill="currentColor" height="7" width="7" x="25" y="48"></rect>
+<rect fill="currentColor" height="18" rx="2" width="18" x="40" y="42"></rect>
+<rect fill="currentColor" height="8" width="8" x="66" y="44"></rect>
+<rect fill="currentColor" height="7" width="9" x="80" y="42"></rect>
+<rect fill="currentColor" height="8" width="8" x="44" y="68"></rect>
+<rect fill="currentColor" height="14" width="7" x="58" y="76"></rect>
+<rect fill="currentColor" height="7" width="18" x="72" y="66"></rect>
+<rect fill="currentColor" height="8" width="8" x="84" y="80"></rect>
+</svg>
+</div>
+<span class="font-label-sm text-label-sm text-text-muted mt-space-xxs">Tunjukkan barcode ini ke kasir untuk serah terima instan</span>
+</div>
+<!-- Items Breakdown -->
+<div class="space-y-space-xs font-body-sm text-body-sm divide-y divide-royal-border/40">
+<div class="flex justify-between py-space-xxs">
+<span class="text-text-main">Cuci Komplit Reguler (5.2 Kg)</span>
+<span class="font-semibold text-text-main">Rp 52.000</span>
+</div>
+<div class="flex justify-between py-space-xxs pt-space-xs">
+<span class="text-text-main">1x Kemeja Formal (Setrika Gantung)</span>
+<span class="font-semibold text-text-main">Rp 12.000</span>
+</div>
+<div class="flex justify-between py-space-xxs pt-space-xs">
+<span class="text-text-muted">Aroma Signature: Ocean Fresh</span>
+<span class="text-champagne font-semibold">Free</span>
+</div>
+<div class="flex justify-between py-space-xxs pt-space-xs">
+<span class="text-text-muted">Diskon Member Loyalty</span>
+<span class="text-text-sub font-medium">- Rp 0</span>
+</div>
+<div class="flex justify-between py-space-xxs pt-space-xs">
+<span class="text-text-muted">Biaya Layanan &amp; Plastik Bio</span>
+<span class="font-semibold text-text-main">Rp 2.200</span>
+</div>
+</div>
+<!-- Payment Status Highlight -->
+<div class="bg-navy-card border border-royal-border p-space-md rounded-xl space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-text-muted">Status Pembayaran</span>
+<span class="px-space-xs py-space-xxs rounded bg-champagne text-midnight font-label-sm text-label-sm font-bold">
+                LUNAS
+              </span>
+</div>
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-text-sub">Metode: QRIS Instant Pay</span>
+<span class="font-metric-currency text-metric-currency text-champagne font-bold">Rp 66.200</span>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="space-y-space-xs pt-space-xs">
+<button class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-royal-blue hover:bg-navy-light border border-royal-border text-text-main rounded-xl font-label-lg text-label-lg transition-colors shadow-sm" onclick="alert('Mengunduh Nota Resmi CleanWave CW-202505-0891 (PDF)...')" type="button">
+<span class="material-symbols-outlined text-[18px] text-champagne">download</span>
+<span>Unduh Nota / Struk PDF</span>
+</button>
+<a class="w-full flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-champagne hover:bg-champagne-light text-midnight rounded-xl font-label-lg text-label-lg font-bold transition-colors shadow-md" href="https://wa.me/6281298765432?text=Halo%20CleanWave%2C%20saya%20ingin%20tanya%20mengenai%20resi%20CW-202505-0891" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-midnight">chat</span>
+<span>Chat CS Outlet Kebayoran</span>
+</a>
+</div>
+</div>
+<!-- Outlet Operating Hours & Location Summary Card -->
+<div class="bg-navy-slate border border-royal-border p-space-lg rounded-2xl shadow-xl space-y-space-sm">
+<div class="flex items-center gap-space-xs text-text-main font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-champagne text-[20px]">storefront</span>
+            Informasi Outlet Pengambilan
+          </div>
+<p class="font-body-sm text-body-sm text-text-sub">
+            Jl. Wijaya II No. 45, Kebayoran Baru, Jakarta Selatan.
+          </p>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-text-muted pt-space-xxs border-t border-royal-border/50">
+<span>Jam Operasional:</span>
+<span class="font-bold text-champagne">07:00 - 21:00 WIB (Setiap Hari)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TAB VIEW 2: Pesan Antar-Jemput (Pickup Online) -->
+<div class="hidden flex-col space-y-space-xl" id="view-antar-jemput">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Form Input Column (7 Cols) -->
+<div class="lg:col-span-7 bg-navy-slate border border-royal-border p-space-xl rounded-2xl shadow-xl space-y-space-lg">
+<div class="space-y-space-xxs">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-space-xxs rounded-full bg-navy-card border border-royal-border text-champagne font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px] text-champagne">bolt</span>
+            Kurir CleanWave Express Siap Meluncur
+          </div>
+<h2 class="font-headline-xl text-headline-xl text-text-main font-bold">Formulir Pemesanan Antar-Jemput</h2>
+<p class="font-body-md text-body-md text-text-muted">Driver kami akan menjemput pakaian kotor langsung dari depan pintu rumah / apartemen Anda.</p>
+</div>
+<form class="space-y-space-md" id="pickup-form" onsubmit="event.preventDefault(); handlePickupSubmit();">
+<!-- Name & WhatsApp row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-space-xxs">
+<label class="font-label-md text-label-md text-text-main font-semibold">Nama Lengkap Pemesan *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-text-muted text-[18px]">person</span>
+<input class="w-full pl-10 pr-space-md py-space-sm bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md placeholder:text-text-muted focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne" placeholder="Kak Siti / Mas Ahmad" required="" type="text"/>
+</div>
+</div>
+<div class="space-y-space-xxs">
+<label class="font-label-md text-label-md text-text-main font-semibold">No. WhatsApp Aktif *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-text-muted text-[18px]">chat</span>
+<input class="w-full pl-10 pr-space-md py-space-sm bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md placeholder:text-text-muted focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne" placeholder="081234567890" required="" type="tel"/>
+</div>
+</div>
+</div>
+<!-- Outlet Destination Selection -->
+<div class="space-y-space-xxs">
+<label class="font-label-md text-label-md text-text-main font-semibold">Pilih Outlet Terdekat *</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-text-muted text-[18px]">location_on</span>
+<select class="w-full pl-10 pr-space-md py-space-sm bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne cursor-pointer">
+<option class="bg-navy-slate text-text-main" selected="" value="kebayoran">CleanWave Outlet Kebayoran Baru (Radius maks 7 km - Free Delivery)</option>
+<option class="bg-navy-slate text-text-main" value="tebet">CleanWave Outlet Tebet Eco Park (Radius maks 6 km)</option>
+<option class="bg-navy-slate text-text-main" value="bsd">CleanWave Workshop BSD Serpong (Radius maks 10 km)</option>
+</select>
+</div>
+</div>
+<!-- Complete Address & Map Coordinates -->
+<div class="space-y-space-xxs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-text-main font-semibold">Alamat Lengkap Jemput *</label>
+<button class="text-champagne hover:underline font-label-sm text-label-sm flex items-center gap-space-xxs font-semibold" onclick="detectGPSLocation()" type="button">
+<span class="material-symbols-outlined text-[16px] text-champagne">my_location</span>
+                Gunakan Lokasi Saat Ini (GPS)
+              </button>
+</div>
+<textarea class="w-full p-space-md bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md placeholder:text-text-muted focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne" placeholder="Nama Jalan, No. Rumah, Blok, RT/RW, Patokan / Detail Unit Apartemen" required="" rows="3"></textarea>
+</div>
+<!-- Pickup Time Slot & Estimated Weight -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="space-y-space-xxs">
+<label class="font-label-md text-label-md text-text-main font-semibold">Jadwal Jam Pickup *</label>
+<select class="w-full px-space-md py-space-sm bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne cursor-pointer">
+<option class="bg-navy-slate text-text-main" selected="">Sesi Pagi (08:30 - 11:30 WIB)</option>
+<option class="bg-navy-slate text-text-main">Sesi Siang (13:00 - 15:30 WIB)</option>
+<option class="bg-navy-slate text-text-main">Sesi Sore/Malam (16:30 - 19:30 WIB)</option>
+</select>
+</div>
+<div class="space-y-space-xxs">
+<label class="font-label-md text-label-md text-text-main font-semibold">Estimasi Berat Cucian</label>
+<select class="w-full px-space-md py-space-sm bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne cursor-pointer">
+<option class="bg-navy-slate text-text-main">Di bawah 5 Kg (1 Keranjang Kecil)</option>
+<option class="bg-navy-slate text-text-main" selected="">5 - 10 Kg (1-2 Keranjang Sedang)</option>
+<option class="bg-navy-slate text-text-main">10 - 20 Kg (Banyak / Campuran Selimut/Bedcover)</option>
+<option class="bg-navy-slate text-text-main">&gt; 20 Kg (Langganan Kos / Usaha)</option>
+</select>
+</div>
+</div>
+<!-- Special Treatment / Fragile Instructions -->
+<div class="space-y-space-xxs">
+<label class="font-label-md text-label-md text-text-main font-semibold">Catatan Pakaian Khusus / Permintaan Khusus</label>
+<input class="w-full px-space-md py-space-sm bg-navy-card border border-royal-border rounded-xl text-text-main font-body-md text-body-md placeholder:text-text-muted focus:outline-none focus:border-champagne focus:ring-1 focus:ring-champagne" placeholder="Contoh: Ada 1 dress sutra jangan dicampur, minta pewangi floral, atau jemput di pos satpam" type="text"/>
+</div>
+<!-- Submit Button -->
+<div class="pt-space-sm">
+<button class="w-full flex items-center justify-center gap-space-sm py-space-md px-space-xl bg-champagne hover:bg-champagne-light text-midnight rounded-xl font-headline-sm text-headline-sm font-bold shadow-xl transition-all active:scale-[0.99]" type="submit">
+<span class="material-symbols-outlined text-[24px] text-midnight">send</span>
+<span>Konfirmasi &amp; Panggil Kurir Sekarang</span>
+</button>
+<p class="text-center font-label-sm text-label-sm text-text-muted pt-space-xs">
+              Driver kami akan konfirmasi WhatsApp dalam kurun waktu 5 - 10 menit setelah formulir dikirim.
+            </p>
+</div>
+</form>
+</div>
+<!-- Map & Benefits / Steps Column (5 Cols) -->
+<div class="lg:col-span-5 space-y-space-lg">
+<!-- Live Coverage Map Snippet -->
+<div class="bg-navy-slate border border-royal-border p-space-md rounded-2xl shadow-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-text-main">Area Jangkauan Antar-Jemput</span>
+<span class="px-space-xs py-space-xxs rounded-full bg-navy-card border border-royal-border text-champagne font-label-sm text-label-sm font-bold">Radius Maks 10 Km</span>
+</div>
+<!-- Map Element with data-location -->
+<div class="w-full h-56 bg-cover bg-center rounded-xl relative overflow-hidden border border-royal-border flex items-end p-space-md" data-location="Kebayoran Baru, Jakarta Selatan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAWwDgNEw2RPA7MDUNQDfqhlXAs94Xb_YaZ_7UPZt2KpHNKIaKd1s8DvAxsxShT0lKfZOP0rOWIJx9dkSmRCkIBRQ6IqTqXaC0I526pYoovLlnVlVaFVN0_9S9hiP1SOupnULPESlCgb5XyuWFSCSMAu1WriLlfpbEUhLBXJDIuEDqQCA7khLhR-02KOeZZK8zzFdhxUxmb1ocrLjY93loO2UouL7uasSqqMMxYSmQkVw2l_d-SWyY')">
+<div class="bg-midnight/90 backdrop-blur-md border border-royal-border p-space-xs rounded-lg shadow-md flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-champagne text-[18px]">radio_button_checked</span>
+<span class="font-label-sm text-label-sm font-semibold text-text-main">Hub Dispatcher: Kebayoran Baru</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-text-sub font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-champagne">local_shipping</span>
+<span>Gratis biaya antar-jemput untuk pesanan minimal Rp 50.000!</span>
+</div>
+</div>
+<!-- 3 Step Simple Antar-Jemput Process -->
+<div class="bg-navy-slate border border-royal-border p-space-lg rounded-2xl shadow-xl space-y-space-md">
+<h3 class="font-headline-sm text-headline-sm font-bold text-text-main">Alur Praktis Antar-Jemput</h3>
+<div class="space-y-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-xl bg-champagne text-midnight flex items-center justify-center font-bold font-label-lg text-label-lg shadow-sm">1</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-text-main">Kurir Datang &amp; Timbang di Tempat</span>
+<p class="font-body-sm text-body-sm text-text-muted">Kurir menimbang langsung memakai timbangan digital gantung dan menerbitkan resi WhatsApp.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-xl bg-royal-blue border border-royal-border text-champagne flex items-center justify-center font-bold font-label-lg text-label-lg shadow-sm">2</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-text-main">Proses Higienis di Workshop</span>
+<p class="font-body-sm text-body-sm text-text-muted">Pakaian diproses menggunakan filter air demineralisasi, 1 mesin per 1 pelanggan (tanpa dicampur).</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<div class="w-9 h-9 rounded-xl bg-navy-card border border-royal-border text-champagne flex items-center justify-center font-bold font-label-lg text-label-lg shadow-sm">3</div>
+<div>
+<span class="font-label-md text-label-md font-bold text-text-main">Diantar Kembali Wangi &amp; Rapi</span>
+<p class="font-body-sm text-body-sm text-text-muted">Pakaian diantar kembali sampai ke tangan Anda dengan packaging kedap anti-kusut.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Assistance Hotline Card -->
+<div class="bg-navy-card border border-royal-border p-space-lg rounded-2xl shadow-sm flex items-center justify-between">
+<div class="space-y-space-xxs">
+<span class="font-label-sm text-label-sm text-text-muted uppercase tracking-wider font-semibold">Butuh Bantuan Segera?</span>
+<div class="font-headline-sm text-headline-sm font-bold text-champagne">0812-9876-5432</div>
+<span class="font-body-sm text-body-sm text-text-sub">Layanan Hotline Bebas Pulsa (07:00 - 22:00)</span>
+</div>
+<a class="w-12 h-12 rounded-full bg-champagne text-midnight flex items-center justify-center shadow-md hover:scale-105 transition-transform font-bold" href="tel:081298765432">
+<span class="material-symbols-outlined text-[24px] text-midnight">call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- FAQ / Jaminan Kualitas Accordion Section -->
+<section class="bg-navy-slate border border-royal-border p-space-xl rounded-2xl shadow-xl space-y-space-lg">
+<div class="text-center max-w-xl mx-auto space-y-space-xxs">
+<h2 class="font-headline-lg text-headline-lg font-bold text-text-main">Pertanyaan Umum Pelanggan</h2>
+<p class="font-body-sm text-body-sm text-text-muted">Transparansi kualitas dan standar operasional CleanWave Laundry.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-navy-card border border-royal-border p-space-md rounded-xl space-y-space-xs hover:border-champagne/40 transition-colors">
+<div class="flex items-center gap-space-xs text-champagne font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px] text-champagne">sanitizer</span>
+          Apakah Pakaian Dicampur?
+        </div>
+<p class="font-body-sm text-body-sm text-text-sub">
+          Sama sekali tidak. CleanWave menerapkan standar ketat <strong class="text-text-main">1 Mesin Cuci 1 Pelanggan</strong> untuk menjaga kebersihan dan mencegah tertukarnya busana.
+        </p>
+</div>
+<div class="bg-navy-card border border-royal-border p-space-md rounded-xl space-y-space-xs hover:border-champagne/40 transition-colors">
+<div class="flex items-center gap-space-xs text-champagne font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px] text-champagne">verified_user</span>
+          Garansi Cuci Uang Kembali?
+        </div>
+<p class="font-body-sm text-body-sm text-text-sub">
+          Jika terdapat noda yang belum tuntas atau bau apek, bawa kembali dalam 1x24 jam dan kami akan <strong class="text-text-main">cuci ulang gratis tanpa syarat</strong>.
+        </p>
+</div>
+<div class="bg-navy-card border border-royal-border p-space-md rounded-xl space-y-space-xs hover:border-champagne/40 transition-colors">
+<div class="flex items-center gap-space-xs text-champagne font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-[20px] text-champagne">contactless</span>
+          Metode Pembayaran Apa Saja?
+        </div>
+<p class="font-body-sm text-body-sm text-text-sub">
+          Kami menerima semua e-Wallet (QRIS, GoPay, OVO, ShopeePay), Transfer Bank Otomatis, serta bayar tunai (Cash on Delivery) saat kurir tiba.
+        </p>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function switchPortalTab(tab) {
+    const viewCekResi = document.getElementById('view-cek-resi');
+    const viewAntarJemput = document.getElementById('view-antar-jemput');
+    const btnCekResi = document.getElementById('tab-cek-resi-btn');
+    const btnAntarJemput = document.getElementById('tab-antar-jemput-btn');
+
+    if (tab === 'cek-resi') {
+      viewCekResi.classList.remove('hidden');
+      viewAntarJemput.classList.add('hidden');
+      
+      btnCekResi.className = 'flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg transition-all duration-200 bg-champagne text-midnight font-bold shadow-md';
+      btnAntarJemput.className = 'flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg transition-all duration-200 text-text-sub hover:text-champagne hover:bg-navy-slate';
+    } else {
+      viewCekResi.classList.add('hidden');
+      viewAntarJemput.classList.remove('hidden');
+
+      btnAntarJemput.className = 'flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg transition-all duration-200 bg-champagne text-midnight font-bold shadow-md';
+      btnCekResi.className = 'flex items-center gap-space-sm px-space-lg py-space-sm rounded-lg font-label-lg text-label-lg transition-all duration-200 text-text-sub hover:text-champagne hover:bg-navy-slate';
+    }
+  }
+
+  function selectSample(code) {
+    document.getElementById('resi-search-input').value = code;
+    simulateSearch();
+  }
+
+  function simulateSearch() {
+    const card = document.getElementById('tracking-card');
+    card.classList.add('opacity-40');
+    setTimeout(() => {
+      card.classList.remove('opacity-40');
+      window.scrollTo({
+        top: card.getBoundingClientRect().top + window.pageYOffset - 90,
+        behavior: 'smooth'
+      });
+    }, 280);
+  }
+
+  function detectGPSLocation() {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          alert('Lokasi terdeteksi secara presisi: [' + position.coords.latitude.toFixed(4) + ', ' + position.coords.longitude.toFixed(4) + ']. Kurir dapat melacak rute dengan akurat.');
+        },
+        () => {
+          alert('GPS aktif disimulasikan: Kebayoran Baru, Jakarta Selatan.');
+        }
+      );
+    } else {
+      alert('GPS aktif disimulasikan: Kebayoran Baru, Jakarta Selatan.');
+    }
+  }
+
+  function handlePickupSubmit() {
+    alert('Terima kasih! Pesanan Pickup Antar-Jemput berhasil didaftarkan. Kurir kami segera menghubungi nomor WhatsApp Anda.');
+    document.getElementById('pickup-form').reset();
+  }
+</script></main></div></body></html>
